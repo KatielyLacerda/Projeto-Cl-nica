@@ -1,0 +1,32 @@
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro Médico</title>
+    <link rel="stylesheet" href="alterar.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Excluir Cadastro</h1>
+    </header>
+    <main>
+      <div class="form-container">
+        <h2>Pesquise por Nome ou CRM</h2>
+        <form id="alterar-form" action="#" method="post">
+          <label for="primeiroNome" class="first-label">Primeiro Nome:</label>
+          <input type="text" id="primeiroNome" name="primeiroNome" required />
+
+          <label for="ultimoNome">Último Nome:</label>
+          <input type="text" id="ultimoNome" name="ultimoNome" required />
+
+          <label for="crm">CRM:</label>
+          <input type="text" id="crm" name="crm" required />
+
+          <button type="submit">Pesquisar</button>
+        </form>
+      </div>
+    </main>
+
+    <script src="excluir-cadastro.js"></script>
+  </body>
+</html>

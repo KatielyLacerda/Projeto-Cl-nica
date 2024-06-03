@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alterar Cadastro</title>
+    <link rel="stylesheet" href="alterar.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Alterar Cadastro</h1>
+    </header>
+    <main>
+      <div class="form-container">
+        <h2>Pesquise por Nome ou CRM</h2>
+        <form id="alterar-form" action="api/pesquisar.php" method="post">
+          <label for="tipoUsuario">Tipo de Usuário:</label>
+          <select id="tipoUsuario" name="tipoUsuario" required>
+            <option value="medico">Médico</option>
+            <option value="paciente">Paciente</option>
+          </select>
+
+          <label for="primeiroNome" class="first-label">Primeiro Nome:</label>
+          <input type="text" id="primeiroNome" name="primeiroNome" required />
+
+          <label for="ultimoNome">Último Nome:</label>
+          <input type="text" id="ultimoNome" name="ultimoNome" required />
+
+          <label for="crm">CRM:</label>
+          <input type="text" id="crm" name="crm" required />
+
+          <button type="submit">Pesquisar</button>
+        </form>
+      </div>
+      <div id="resultado"></div>
+      <!-- exibindo o resultado -->
+    </main>
+
+    <script src="alterar-cadastro.js"></script>
+  </body>
+</html>

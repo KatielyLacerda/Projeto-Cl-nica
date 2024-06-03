@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro Médico</title>
+    <link rel="stylesheet" href="style-medico.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Cadastro Médico</h1>
+    </header>
+    <main>
+      <div class="form-container">
+        <h2>Preencha os dados abaixo:</h2>
+        <form id="medico-form" action="#" method="post">
+          <label for="primeiroNome" class="first-label">Primeiro Nome:</label>
+          <input type="text" id="primeiroNome" name="primeiroNome" required />
+
+          <label for="ultimoNome">Último Sobrenome:</label>
+          <input type="text" id="ultimoNome" name="ultimoNome" required />
+
+          <label for="crm">CRM:</label>
+          <input type="text" id="crm" name="crm" required />
+
+          <label for="especialidade">Especialidade:</label>
+          <input
+            type="text"
+            id="especialidade"
+            name="especialidade"
+            required
+            list="especialidadesList"
+          />
+
+          <datalist id="especialidadesList">
+            <option value="ALERGOLOGIA"></option>
+            <option value="ANGIOLOGIA"></option>
+            <option value="BUCO MAXILO"></option>
+            <option value="CARDIOLOGIA CLÍNICA"></option>
+            <option value="CARDIOLOGIA INFANTIL"></option>
+            <option value="CIRURGIA CABEÇA E PESCOÇO"></option>
+            <option value="CIRURGIA CARDÍACA"></option>
+            <option value="CIRURGIA DE CABEÇA/PESSOÇO"></option>
+            <option value="CIRURGIA DE TORAX"></option>
+            <option value="CIRURGIA GERAL"></option>
+            <option value="CIRURGIA PEDIÁTRICA"></option>
+            <option value="CIRURGIA PLÁSTICA"></option>
+            <option value="CIRURGIA TORÁCICA"></option>
+            <option value="CIRURGIA VASCULAR"></option>
+            <option value="CIRURGIA MÉDICA"></option>
+          </datalist>
+
+          <label for="telefone">Telefone:</label>
+          <input type="tel" id="telefone" name="telefone" required />
+
+          <button type="submit">Cadastrar</button>
+        </form>
+      </div>
+    </main>
+    <script src="scriptcadastro-medico.js"></script>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro Paciente</title>
+    <link rel="stylesheet" href="style-paciente.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Cadastro Paciente</h1>
+    </header>
+
+    <main>
+      <div class="form-container">
+        <h2>Preencha os dados abaixo:</h2>
+        <form id="paciente-form" action="#" method="post">
+          <label for="primeiroNome" class="first-label">Primeiro Nome:</label>
+          <input type="text" id="primeiroNome" name="primeiroNome" required />
+
+          <label for="ultimoNome">Último Sobrenome:</label>
+          <input type="text" id="ultimoNome" name="ultimoNome" required />
+
+          <label for="cpf">CPF:</label>
+          <input type="text" id="cpf" name="cpf" required />
+
+          <label for="cep">CEP:</label>
+          <input type="text" id="cep" name="cep" required />
+
+          <label for="endereco">Endereço:</label>
+          <input type="text" id="endereco" name="endereco" required />
+
+          <label for="numero">Número:</label>
+          <input type="text" id="numero" name="numero" required />
+
+          <label for="cidade">Cidade:</label>
+          <input type="text" id="cidade" name="cidade" required />
+
+          <label for="estado">Estado:</label>
+          <input type="text" id="estado" name="estado" required />
+
+          <label for="telefone">Telefone:</label>
+          <input type="tel" id="telefone" name="telefone" required />
+
+          <!-- Novos campos para exames -->
+          <div id="exames-container">
+            <h2>Exames:</h2>
+            <div class="exame">
+              <label for="nomeExame">Nome do Exame:</label>
+              <input
+                type="text"
+                class="nome-exame"
+                name="nomeExame[]"
+                required
+              />
+
+              <label for="codigoExame">Código do Exame:</label>
+              <input
+                type="text"
+                class="codigo-exame"
+                name="codigoExame[]"
+                required
+              />
+
+              <label for="dataExame">Data do Exame:</label>
+              <input
+                type="text"
+                class="data-exame"
+                name="dataExame[]"
+                required
+              />
+            </div>
+          </div>
+
+          <button type="button" id="adicionar-exame">Adicionar Exame</button>
+
+          <button type="submit">Cadastrar</button>
+        </form>
+      </div>
+    </main>
+
+    <script src="script-cadastro-paciente.js"></script>
+  </body>
+</html>

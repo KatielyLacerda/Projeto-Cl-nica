@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portal</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-div">
+        <p>
+          Seja bem-vindo ao sistema da nossa clínica! Estamos felizes em te ter aqui, nesse portal você pode realizar, alterar ou excluir o seu cadastro. Se tiver alguma duvida favor enviar para o e-mail no final da página. 
+        </p>
+      </div>
+      <div class="centered-div">
+        <p>FAZER CADASTRO</p>
+        <button id="botao-medico">Médico</button>
+        <button id="botao-paciente">Paciente</button>
+      </div>
+      <div class="centered1-div">
+        <p>OUTRAS OPÇÕES</p>
+        <button id="botao-alterar">Alterar Cadastro</button>
+        <button id="botao-excluir">Excluir Cadastro</button>
+      </div>
+    </div>
+    </div>
+
+    <script> //funções para o rederecionamento
+      function redirecionarParaMedicos() {
+        window.location.href = "cadastro-medico.html";
+      }
+
+      function redirecionarParaPacientes() {
+        window.location.href = "cadastro-paciente.html";
+      }
+      function redirecionarParaAlterar(){
+        window.location.href="alterar-cadastro.html"
+      }
+      function redirecionarParaExcluir(){
+        window.location.href="excluir-cadastro.html"
+      }
+
+
+      //acionando os eventos 
+      document.getElementById("botao-medico").addEventListener("click", redirecionarParaMedicos);
+      document.getElementById("botao-paciente").addEventListener("click", redirecionarParaPacientes);
+      document.getElementById("botao-alterar").addEventListener("click", redirecionarParaAlterar);
+      document.getElementById("botao-excluir").addEventListener("click", redirecionarParaExcluir);
+    </script>
+  </body>
+</html>
+
+</html>
